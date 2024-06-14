@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Gorras</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class=" titulo1 mt-3 mx-1  mx-19 ">Tienda de Gorras</h1>
+        <nav class="text-center mt-4 mx-10">
+            <ul >
+                
+                <li class="titulo2 width-20  "><a href="#">Productos</a></li>
+          
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+           
+            <div class="productos-grid mt-4">
+                </div>
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <table class="carrito-tabla">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Total:</td>
+                        <td id="total-carrito"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Gorras</p>
+    </footer>
+
+    <script src="productos.js"></script>
+</body>
+</html>

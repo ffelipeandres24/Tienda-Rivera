@@ -1,0 +1,142 @@
+.productos-grid {
+    width: 100%;
+    margin: 0 auto;
+    display: flex; /* Mostrar productos en fila */
+    flex-wrap: wrap; /* Permitir que los productos se ajusten a varias filas */
+    justify-content: center; /* Centrar los productos */
+    gap: 20px; /* Espacio entre productos */
+    font-feature-settings: "smcp", "zero";
+    font-size: 18px;
+}
+
+.producto {
+    flex: 0 0 300px; /* Ancho mínimo y máximo de 300px */
+    transition: background-color 0.8s ease, transform 0.4s ease; /* Animación de fondo y transformación al pasar el cursor */
+}
+
+.producto:hover {
+    background-color: #fffdfd;
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el cursor */
+}
+.producto button {
+    padding: 8px 15px;
+    background-color: #4CAF50; /* Verde */
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+#carrito {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Bordes redondeados */
+    font-feature-settings: "smcp", "zero";
+    font-size: 18px;
+}
+
+.carrito-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-feature-settings: "smcp", "zero";
+    font-size: 18px;
+}
+
+.carrito-tabla th, .carrito-tabla td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.carrito-tabla th {
+    background-color: #8cff92;
+    font-weight: bold;
+}
+
+.carrito-tabla input[type="number"] {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.carrito-tabla button {
+    padding: 5px 10px;
+    background-color: #ff4d4d; /* Rojo */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrito-tabla button:hover {
+    background-color: #dc3545; /* Rojo más oscuro */
+}
+
+#total-carrito {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Estilos para el pie de página */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+}
+
+/* Estilos para formularios de búsqueda (si los hay) */
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para mensajes de error o información (si los hay) */
+.alert {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #3c7634;
+
+}
+.titulo1{
+    height: 40px;
+    font-feature-settings: "smcp", "zero";
+    font-size: 25px;
+    background-color: #45cc4c;
+}
+.titulo2{
+    font-feature-settings: "smcp", "zero";
+    font-size: 20px;
+    background-color:#8cff92;
+}
+footer{
+    background-color: #8cff92;
+}
